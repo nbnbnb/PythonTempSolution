@@ -1,0 +1,15 @@
+E:\Git\PythonTempSolution\DjangoApp\bin\Microsoft.PythonTools.WebRole.dll
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\attach_server.py
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\visualstudio_py_debugger.py
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\visualstudio_py_repl.py
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\visualstudio_py_util.py
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\__init__.py
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\__main__.py
+E:\Git\PythonTempSolution\DjangoApp\bin\AzureSetup.cfg
+E:\Git\PythonTempSolution\DjangoApp\bin\Microsoft.PythonTools.AzureSetup.exe
+E:\Git\PythonTempSolution\DjangoApp\bin\Microsoft.PythonTools.AzureSetup.exe.config
+E:\Git\PythonTempSolution\DjangoApp\bin\wfastcgi.py
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\deployment-updated-orig-prefix.txt
+E:\Git\PythonTempSolution\DjangoApp\ptvs_virtualenv_proxy.py
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\web.config
+E:\Git\PythonTempSolution\DjangoApp\obj\Debug\web.debug.config
