@@ -35,8 +35,6 @@
   <ItemGroup>
     <Content Include="badline.png" />
     <Content Include="house.png" />
-    <Content Include="修改图.ai" />
-    <Content Include="原始图.ai" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
