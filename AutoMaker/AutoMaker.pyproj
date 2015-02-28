@@ -24,9 +24,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="automarker.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="automarker.py" />
     <Compile Include="start.py" />
     <Compile Include="test.py">
       <SubType>Code</SubType>
