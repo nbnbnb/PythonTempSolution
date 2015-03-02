@@ -31,8 +31,15 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="1.png" />
+    <Content Include="2.png" />
+    <Content Include="3.png" />
+    <Content Include="4.png" />
+    <Content Include="5.png" />
+    <Content Include="6.png" />
     <Content Include="badline.png" />
     <Content Include="house.png" />
+    <Content Include="PointsMarker.exe" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />

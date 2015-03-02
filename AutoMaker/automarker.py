@@ -9,12 +9,12 @@ detectPointCount = 10
 offset = 5
 
 # 判断线是否为【斜】向上趋势
-# 取一部分连续的点，只要前一个点大于后一个点，就认为是向上的斜线 
+# 取一部分连续的点，只要前一个点大于后一个点，就认为是向上的斜线
 def isUp(list,start,cnt):    
     upCount = 1
     try:
         for i in range(cnt - 1):
-            if list[start + i] <= list[start + i + i]:
+            if list[start + i] <= list[start + i + 1]:
                 upCount+=1
         # 当所有的点满足条件时，表示这是一个向上的趋势
         # 否则就是一个向下的趋势
@@ -23,21 +23,10 @@ def isUp(list,start,cnt):
     except IndexError: # 检测到了结尾
         return False # 此处随便返回一个值
 
-
 # 判断是否为直线
-# 取一部分连续的点，若3个点都不相等，就认为它是斜线，否则就为直线
+# 只要他们的不同数小于2个，就认为他们是直线，否则为斜线
 def isLine(list,start,cnt):
-    for i in range(cnt - 1):
-        if start > 0:
-            try:
-                if(list[start + i] != list[start + i + 1] and list[start + i - 1] != list[start + i + 1] and list[start + i - 1] != list[start + i]):
-                    return False
-            except IndexError: #检查到了结尾还是直线
-                return True
-        else: # 特殊情况第一个判断点
-            if(list[0] != list[1] and list[1] != list[2] and list[0] != list[2]):
-                return False
-    return True
+    return len(set(list[start:start + cnt])) < 3
 
 # 核心算法
 # 获取拐点
@@ -49,8 +38,11 @@ def getIndex(list,start):
         # 由于已经有一部分数据判断过了
         # 此处从 detectPointCount - 1 开始进行循环判断
         for i in range(detectPointCount - 1,cnt - start - 1):
-            flag = i + start
+            flag = i + start            
             try:
+                # 每次迭代，判断后续的点有没有可能是斜线
+                # 如果是斜线，就肯定此处为一个拐点
+                # 如果是直线的的话，不会有3个连续相等的情况
                 if (list[flag - 1] != list[flag] and list[flag] != list[flag + 1] and list[flag - 1] != list[flag + 1]):
                     return flag + 1
             except IndexError: # 检测到了结尾
@@ -62,12 +54,13 @@ def getIndex(list,start):
 
         for i in range(cnt - start - 1):
             flag = i + start
-
             # 在每一次迭代之前，需要判断后续的点有没有可能为直线
             # 因为从斜线变为直线处，肯定就是一个拐点
-            if flag < cnt - detectPointCount and isLine(list,flag - 1,detectPointCount):
+            if isLine(list,flag,detectPointCount):
                 return flag
 
+            # 对于 805 805 806 807 808 808 809 809 这类的上升趋势
+            # 应该如何应对
             # 判断趋势是否发生了明显的变化
             # 如果是，就直接返回当前点
             if up:
@@ -91,7 +84,6 @@ def pointCheck(list1,list2,file):
         index = getIndex(list1,index)
         if index == None:
             break
-
     index = 0   
     # 将 y 轴的拐点加入集合
     while True:
@@ -146,19 +138,21 @@ def generateResult(fileName):
     
     # 单点测试
     '''
-    lines1 = list(contours[4][:,0][:,0].flat)
-    lines2 = list(contours[4][:,0][:,1].flat)
+    lines1 = list(contours[1][:,0][:,0].flat)
+    lines2 = list(contours[1][:,0][:,1].flat)
     checkfilex = open('check-x.txt','w')
     checkfilex.writelines([str(x) + '\n' for x in lines1])
     checkfiley = open('check-y.txt','w')
     checkfiley.writelines([str(y) + '\n' for y in lines2])	
     pointCheck(lines1,lines2,resFile)
-    '''    
+        
+    '''
     for points in contours:
+
         indexX = list(points[:,0][:,0].flat)
         indexY = list(points[:,0][:,1].flat)
         pointCheck(indexX,indexY,resFile)
-    
+
     resFile.close()
 
 if __name__ == '__main__':
