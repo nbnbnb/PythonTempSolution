@@ -24,19 +24,21 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="automarkerdebug.py" />
     <Compile Include="automarker.py" />
     <Compile Include="start.py" />
-    <Compile Include="test.py">
-      <SubType>Code</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="1.png" />
+    <Content Include="10.png" />
     <Content Include="2.png" />
     <Content Include="3.png" />
     <Content Include="4.png" />
     <Content Include="5.png" />
     <Content Include="6.png" />
+    <Content Include="7.png" />
+    <Content Include="8.png" />
+    <Content Include="9.png" />
     <Content Include="PointsMarker.exe" />
   </ItemGroup>
   <ItemGroup>
