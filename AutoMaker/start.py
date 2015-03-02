@@ -2,11 +2,11 @@ import sys
 import automarker
 import os
 
-testFile='6.png'
-
-if len(sys.argv)==2:
+if len(sys.argv) == 2:
 	automarker.generateResult(sys.argv[1])
-else:	
-	automarker.generateResult(testFile)
-
-os.system('PointsMarker.exe "%s"' % testFile)
+else:
+    print('Start Marking...')
+    testFiles = ['1.png','2.png','3.png','4.png','5.png','6.png']
+    for testFile in testFiles:
+        automarker.generateResult(testFile)
+        os.system('PointsMarker.exe "%s"' % testFile)
