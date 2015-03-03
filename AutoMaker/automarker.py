@@ -1,6 +1,6 @@
 ﻿import cv2
 import numpy as np
-detectPointCount = 10
+detectPointCount = 5
 offset = 5
 def isUp(list,start,cnt):    
     upCount = 1

@@ -3,14 +3,14 @@ import numpy as np
 
 # 设置探测点格式
 # isUp 和 isLine 函数使用
-detectPointCount = 10
+detectPointCount = 5
 
 # 过滤点的阈值
 offset = 5
 
 # 判断线是否为【斜】向上趋势
 # 取一部分连续的点，只要前一个点大于后一个点，就认为是向上的斜线
-def isUp(list,start,cnt):    
+def isUp(list,start,cnt):   
     upCount = 1
     try:
         for i in range(cnt - 1):
@@ -85,6 +85,7 @@ def pointCheck(list1,list2,file):
         if index == None:
             break
     index = 0   
+
     # 将 y 轴的拐点加入集合
     while True:
         # 排除掉重复的点
@@ -138,18 +139,20 @@ def generateResult(fileName):
     
     # 单点测试
     '''
-    lines1 = list(contours[1][:,0][:,0].flat)
-    lines2 = list(contours[1][:,0][:,1].flat)
-    checkfilex = open('check-x.txt','w')
+    lines1 = list(contours[22][:,0][:,0].flat)
+    lines2 = list(contours[22][:,0][:,1].flat)
+    checkfilex = open('check-x.txt','w+')
     checkfilex.writelines([str(x) + '\n' for x in lines1])
-    checkfiley = open('check-y.txt','w')
-    checkfiley.writelines([str(y) + '\n' for y in lines2])	
+    checkfiley = open('check-y.txt','w+')
+    checkfiley.writelines([str(y) + '\n' for y in lines2])	  
     pointCheck(lines1,lines2,resFile)        
-    '''
-    for points in contours:
+    
 
+    '''
+
+    for points in contours:
         indexX = list(points[:,0][:,0].flat)
         indexY = list(points[:,0][:,1].flat)
         pointCheck(indexX,indexY,resFile)
-
+    
     resFile.close()

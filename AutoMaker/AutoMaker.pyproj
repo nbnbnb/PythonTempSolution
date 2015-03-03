@@ -27,6 +27,7 @@
     <Compile Include="automarkerdebug.py" />
     <Compile Include="automarker.py" />
     <Compile Include="start.py" />
+    <Compile Include="threshold.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="1.png" />
@@ -39,10 +40,21 @@
     <Content Include="7.png" />
     <Content Include="8.png" />
     <Content Include="9.png" />
+    <Content Include="a.png" />
+    <Content Include="b.png" />
     <Content Include="PointsMarker.exe" />
+    <Content Include="Tesseract.dll" />
+    <Content Include="x64\liblept168.dll" />
+    <Content Include="x64\libtesseract302.dll" />
+    <Content Include="x86\liblept168.dll" />
+    <Content Include="x86\libtesseract302.dll" />
   </ItemGroup>
   <ItemGroup>
     <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\2.7" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="x64\" />
+    <Folder Include="x86\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
