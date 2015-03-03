@@ -59,8 +59,6 @@ def getIndex(list,start):
             if isLine(list,flag,detectPointCount):
                 return flag
 
-            # 对于 805 805 806 807 808 808 809 809 这类的上升趋势
-            # 应该如何应对
             # 判断趋势是否发生了明显的变化
             # 如果是，就直接返回当前点
             if up:
@@ -117,8 +115,7 @@ def filterPoints(points,offset):
     
     for i in range(1,len(points)):
         # 将所有的点与检测出来的拐点进行对比
-        # 如果他们的 offset 大于一个指定的访问，认为这是一个最终的拐点
-        # 此处通过点的来判断，如果没有脏点，则认为这是一个最终的拐点
+        # 如果他们的 offset 大于一个指定的范围，则认为这是一个合格的【不是相邻很近】拐点，添加到拐点集合中
         if len([x for x in res if getOffset(x,points[i]) <= offset]) == 0:
             res.append(points[i])
 
@@ -136,9 +133,10 @@ def generateResult(fileName):
     mask = cv2.inRange(img,lower_red,upper_red)
     contours,hierarchy = cv2.findContours(mask,cv2.RETR_EXTERNAL,cv2.CHAIN_APPROX_NONE)
     
-    
     # 单点测试
     '''
+
+
     lines1 = list(contours[22][:,0][:,0].flat)
     lines2 = list(contours[22][:,0][:,1].flat)
     checkfilex = open('check-x.txt','w+')
@@ -149,10 +147,11 @@ def generateResult(fileName):
     
 
     '''
-
-    for points in contours:
-        indexX = list(points[:,0][:,0].flat)
-        indexY = list(points[:,0][:,1].flat)
-        pointCheck(indexX,indexY,resFile)
-    
-    resFile.close()
+    try:
+        for points in contours:
+            indexX = list(points[:,0][:,0].flat)
+            indexY = list(points[:,0][:,1].flat)
+            pointCheck(indexX,indexY,resFile)
+    except Exception as ex:
+        open('abc.txt','a+').write(str(ex)+'\n')
+        resFile.close()
