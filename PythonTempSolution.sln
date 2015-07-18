@@ -11,6 +11,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "AutoMaker", "AutoMaker\Auto
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DjangoApp", "DjangoApp\DjangoApp.pyproj", "{835A14F5-FA1F-4243-B7A8-71959633EADE}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "OpenCV", "OpenCV\OpenCV.pyproj", "{051C7E6C-E07B-48AC-9D1B-69B2DA1A3DDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,8 @@ Global
 		{835A14F5-FA1F-4243-B7A8-71959633EADE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{835A14F5-FA1F-4243-B7A8-71959633EADE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{835A14F5-FA1F-4243-B7A8-71959633EADE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{051C7E6C-E07B-48AC-9D1B-69B2DA1A3DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{051C7E6C-E07B-48AC-9D1B-69B2DA1A3DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
