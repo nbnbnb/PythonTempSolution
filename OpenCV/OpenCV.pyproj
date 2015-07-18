@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>051c7e6c-e07b-48ac-9d1b-69b2da1a3ddf</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>OpenCV.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>OpenCV</Name>
+    <RootNamespace>OpenCV</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="OpenCV.py" />
+    <Compile Include="Tutorials\10 图像上的算术运算\run test.py" />
+    <Compile Include="Tutorials\10 图像上的算术运算\run 加法差异.py" />
+    <Compile Include="Tutorials\10 图像上的算术运算\run 图像加法.py" />
+    <Compile Include="Tutorials\10 图像上的算术运算\run 图像混合.py" />
+    <Compile Include="Tutorials\10 图像上的算术运算\run 按位运算.py" />
+    <Compile Include="Tutorials\11 程序性能检测及优化\run 基本检测方法.py" />
+    <Compile Include="Tutorials\13 颜色空间转换\run 图像跟踪.py" />
+    <Compile Include="Tutorials\13 颜色空间转换\run 找出跟踪对象的 HSV 值.py" />
+    <Compile Include="Tutorials\14 几何变换\run 平移.py" />
+    <Compile Include="Tutorials\14 几何变换\run 扩展缩放.py" />
+    <Compile Include="Tutorials\15 图像阈值\back\run Otu%27s 二值化.py" />
+    <Compile Include="Tutorials\15 图像阈值\back\run 提取红色区域.py" />
+    <Compile Include="Tutorials\15 图像阈值\back\run 简单阈值.py" />
+    <Compile Include="Tutorials\15 图像阈值\back\run 自适应阈值.py" />
+    <Compile Include="Tutorials\15 图像阈值\back\找点.py" />
+    <Compile Include="Tutorials\15 图像阈值\run Otsu%27s 二值化.py" />
+    <Compile Include="Tutorials\15 图像阈值\run 简单阈值.py" />
+    <Compile Include="Tutorials\15 图像阈值\run 自适应阈值.py" />
+    <Compile Include="Tutorials\16 平滑图像\run 中值模糊.py" />
+    <Compile Include="Tutorials\16 平滑图像\run 双边模糊.py" />
+    <Compile Include="Tutorials\16 平滑图像\run 平均模糊.py" />
+    <Compile Include="Tutorials\16 平滑图像\run 高斯模糊.py" />
+    <Compile Include="Tutorials\17 形态学转换\run 开运算.py" />
+    <Compile Include="Tutorials\17 形态学转换\run 形态学梯度.py" />
+    <Compile Include="Tutorials\17 形态学转换\run 礼帽.py" />
+    <Compile Include="Tutorials\17 形态学转换\run 结构化元素.py" />
+    <Compile Include="Tutorials\17 形态学转换\run 腐蚀.py" />
+    <Compile Include="Tutorials\17 形态学转换\run 膨胀.py" />
+    <Compile Include="Tutorials\17 形态学转换\run 闭运算.py" />
+    <Compile Include="Tutorials\17 形态学转换\run 黑帽.py" />
+    <Compile Include="Tutorials\21 OpenCV 中的轮廓\run 初识轮廓.py" />
+    <Compile Include="Tutorials\30 Harris 角点检测\run 基本原理.py" />
+    <Compile Include="Tutorials\30 Harris 角点检测\房间.py" />
+    <Compile Include="Tutorials\31 Shi-Tomasi 角点检测\run 基本原理.py" />
+    <Compile Include="Tutorials\4 图片\run 使用 Matplotlib.py" />
+    <Compile Include="Tutorials\4 图片\run 保存图像.py" />
+    <Compile Include="Tutorials\4 图片\run 判断按键.py" />
+    <Compile Include="Tutorials\4 图片\run 固定窗口大小.py" />
+    <Compile Include="Tutorials\4 图片\run 改变窗口大小.py" />
+    <Compile Include="Tutorials\5 视频\run 捕获视频 保存文件.py" />
+    <Compile Include="Tutorials\5 视频\run 捕获视频.py" />
+    <Compile Include="Tutorials\6 OpenCV 中的绘图函数\run 综合绘图.py" />
+    <Compile Include="Tutorials\7 把鼠标当画笔\run 高级鼠标绘图.py" />
+    <Compile Include="Tutorials\7 把鼠标当画笔\run 鼠标当画笔.py" />
+    <Compile Include="Tutorials\8 用滑动条做调色版\run 基本功能.py" />
+    <Compile Include="Tutorials\8 用滑动条做调色版\run 结合画笔.py" />
+    <Compile Include="Tutorials\9 图像的基础操作\run 为图像扩边.py" />
+    <Compile Include="Tutorials\9 图像的基础操作\run 图像 ROI.py" />
+    <Compile Include="Tutorials\9 图像的基础操作\run 读取图像属性.py" />
+    <Compile Include="Tutorials\9 图像的基础操作\run 读取设置像素.py" />
+    <Compile Include="Tutorials\9 图像的基础操作\run 通道分离与合并.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Tutorials\" />
+    <Folder Include="Tutorials\10 图像上的算术运算\" />
+    <Folder Include="Tutorials\11 程序性能检测及优化\" />
+    <Folder Include="Tutorials\13 颜色空间转换\" />
+    <Folder Include="Tutorials\14 几何变换\" />
+    <Folder Include="Tutorials\15 图像阈值\" />
+    <Folder Include="Tutorials\15 图像阈值\back\" />
+    <Folder Include="Tutorials\16 平滑图像\" />
+    <Folder Include="Tutorials\17 形态学转换\" />
+    <Folder Include="Tutorials\21 OpenCV 中的轮廓\" />
+    <Folder Include="Tutorials\30 Harris 角点检测\" />
+    <Folder Include="Tutorials\31 Shi-Tomasi 角点检测\" />
+    <Folder Include="Tutorials\4 图片\" />
+    <Folder Include="Tutorials\5 视频\" />
+    <Folder Include="Tutorials\6 OpenCV 中的绘图函数\" />
+    <Folder Include="Tutorials\7 把鼠标当画笔\" />
+    <Folder Include="Tutorials\8 用滑动条做调色版\" />
+    <Folder Include="Tutorials\9 图像的基础操作\" />
+    <Folder Include="Tutorials\images\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Tutorials\15 图像阈值\back\house.png" />
+    <Content Include="Tutorials\15 图像阈值\back\res.txt" />
+    <Content Include="Tutorials\15 图像阈值\back\test.jpg" />
+    <Content Include="Tutorials\15 图像阈值\back\test.png" />
+    <Content Include="Tutorials\15 图像阈值\back\white-black.jpg" />
+    <Content Include="Tutorials\21 OpenCV 中的轮廓\test.jpg" />
+    <Content Include="Tutorials\30 Harris 角点检测\house.jpg" />
+    <Content Include="Tutorials\30 Harris 角点检测\res.jpg" />
+    <Content Include="Tutorials\4 图片\BTKing.png" />
+    <Content Include="Tutorials\images\130-1.png" />
+    <Content Include="Tutorials\images\130-2.png" />
+    <Content Include="Tutorials\images\bilateral.png" />
+    <Content Include="Tutorials\images\closing.png" />
+    <Content Include="Tutorials\images\dave.png" />
+    <Content Include="Tutorials\images\erode.png" />
+    <Content Include="Tutorials\images\logo.png" />
+    <Content Include="Tutorials\images\logo2.png" />
+    <Content Include="Tutorials\images\mountain.jpg" />
+    <Content Include="Tutorials\images\mountain.png" />
+    <Content Include="Tutorials\images\opening.png" />
+    <Content Include="Tutorials\images\pattern.png" />
+    <Content Include="Tutorials\images\thresh.png" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
