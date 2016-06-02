@@ -13,3 +13,16 @@ E:\Git\PythonTempSolution\DjangoApp\obj\Debug\deployment-updated-orig-prefix.txt
 E:\Git\PythonTempSolution\DjangoApp\ptvs_virtualenv_proxy.py
 E:\Git\PythonTempSolution\DjangoApp\obj\Debug\web.config
 E:\Git\PythonTempSolution\DjangoApp\obj\Debug\web.debug.config
+D:\Repos\PythonTempSolution\DjangoApp\bin\Microsoft.PythonTools.WebRole.dll
+D:\Repos\PythonTempSolution\DjangoApp\obj\Debug\attach_server.py
+D:\Repos\PythonTempSolution\DjangoApp\obj\Debug\visualstudio_py_debugger.py
+D:\Repos\PythonTempSolution\DjangoApp\obj\Debug\visualstudio_py_repl.py
+D:\Repos\PythonTempSolution\DjangoApp\obj\Debug\visualstudio_py_util.py
+D:\Repos\PythonTempSolution\DjangoApp\obj\Debug\__init__.py
+D:\Repos\PythonTempSolution\DjangoApp\obj\Debug\__main__.py
+D:\Repos\PythonTempSolution\DjangoApp\bin\AzureSetup.cfg
+D:\Repos\PythonTempSolution\DjangoApp\bin\Microsoft.PythonTools.AzureSetup.exe
+D:\Repos\PythonTempSolution\DjangoApp\bin\Microsoft.PythonTools.AzureSetup.exe.config
+D:\Repos\PythonTempSolution\DjangoApp\bin\wfastcgi.py
+D:\Repos\PythonTempSolution\DjangoApp\obj\Debug\web.config
+D:\Repos\PythonTempSolution\DjangoApp\obj\Debug\web.debug.config
