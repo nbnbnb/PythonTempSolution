@@ -1,10 +1,13 @@
-f=open('abc.txt')
+﻿class Person(object):
+    name = 'ZhangJin'
 
-def showInfo(a,b,c):
-    print(a)
-    print(b)
-    print(c)
+p=Person()
 
-showInfo(*f);
-
-print 'Hello Wrold!'
+print(p.name)
+print(Person.name)
+print(dir(p))
+p.name=u'张进'
+print(dir(p))
+print(p.name)
+print(Person.name)
+print(dir(Person))
