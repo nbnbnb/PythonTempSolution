@@ -4,7 +4,7 @@
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>3982e110-1e81-44db-812d-273849225212</ProjectGuid>
+    <ProjectGuid>d2627d66-997a-4869-8bf1-4200e09805a5</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{e614c764-6d9e-4607-9337-b7073809a0bd};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <StartupFile>app.py</StartupFile>
@@ -13,16 +13,12 @@
     <WorkingDirectory>.</WorkingDirectory>
     <LaunchProvider>Web launcher</LaunchProvider>
     <OutputPath>.</OutputPath>
-    <StaticUriPattern>^/static/.*</StaticUriPattern>
     <PythonDebugWebServerCommandArguments>--debug $(CommandLineArguments)</PythonDebugWebServerCommandArguments>
     <PythonWsgiHandler>{StartupModule}.wsgi_app()</PythonWsgiHandler>
     <Name>BottleWebProject</Name>
     <RootNamespace>BottleWebProject</RootNamespace>
-    <InterpreterId>
-    </InterpreterId>
-    <InterpreterVersion>
-    </InterpreterVersion>
-    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>{f6ad2c13-4a5d-4bc3-bc0f-e1f730b50131}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,55 +30,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.py" />
-    <Compile Include="routes.py" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="static\" />
-    <Folder Include="static\content\" />
-    <Folder Include="static\fonts\" />
-    <Folder Include="static\scripts\" />
-    <Folder Include="views\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="requirements.txt" />
-    <Content Include="static\content\bootstrap.css" />
-    <Content Include="static\content\bootstrap.min.css" />
-    <Content Include="static\content\site.css" />
-    <Content Include="static\fonts\glyphicons-halflings-regular.eot" />
-    <Content Include="static\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="static\fonts\glyphicons-halflings-regular.ttf" />
-    <Content Include="static\fonts\glyphicons-halflings-regular.woff" />
-    <Content Include="static\scripts\bootstrap.js" />
-    <Content Include="static\scripts\bootstrap.min.js" />
-    <Content Include="static\scripts\jquery-1.10.2.intellisense.js" />
-    <Content Include="static\scripts\jquery-1.10.2.js" />
-    <Content Include="static\scripts\jquery-1.10.2.min.js" />
-    <Content Include="static\scripts\jquery-1.10.2.min.map" />
-    <Content Include="static\scripts\jquery.validate-vsdoc.js" />
-    <Content Include="static\scripts\jquery.validate.js" />
-    <Content Include="static\scripts\jquery.validate.min.js" />
-    <Content Include="static\scripts\jquery.validate.unobtrusive.js" />
-    <Content Include="static\scripts\jquery.validate.unobtrusive.min.js" />
-    <Content Include="static\scripts\modernizr-2.6.2.js" />
-    <Content Include="static\scripts\respond.js" />
-    <Content Include="static\scripts\respond.min.js" />
-    <Content Include="static\scripts\_references.js" />
-    <Content Include="views\about.tpl" />
-    <Content Include="views\contact.tpl" />
-    <Content Include="views\index.tpl" />
-    <Content Include="views\layout.tpl" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
-      <Id>{671fc6d8-db67-44f3-9ff5-f12fc683715b}</Id>
-      <BaseInterpreter>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</BaseInterpreter>
-      <Version>3.4</Version>
-      <Description>env (Python 64-bit 3.4)</Description>
+      <Id>{f6ad2c13-4a5d-4bc3-bc0f-e1f730b50131}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.5</Version>
+      <Description>env (Python 3.5)</Description>
       <InterpreterPath>Scripts\python.exe</InterpreterPath>
       <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
       <LibraryPath>Lib\</LibraryPath>
       <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
-      <Architecture>Amd64</Architecture>
+      <Architecture>X86</Architecture>
     </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />

@@ -1,10 +1,3 @@
-f=open('abc.txt')
-
-def showInfo(a,b,c):
-    print(a)
-    print(b)
-    print(c)
-
-showInfo(*f);
-
-print('Hello Wrold!')
+class MyClass(object):
+    def __init__(self, **kwargs):
+        return super().__init__(**kwargs)
