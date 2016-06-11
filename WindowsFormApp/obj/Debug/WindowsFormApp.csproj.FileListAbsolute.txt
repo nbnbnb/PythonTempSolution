@@ -1,0 +1,11 @@
+E:\Repos\PythonTempSolution\WindowsFormApp\bin\Debug\WindowsFormApp.exe.config
+E:\Repos\PythonTempSolution\WindowsFormApp\bin\Debug\WindowsFormApp.exe
+E:\Repos\PythonTempSolution\WindowsFormApp\bin\Debug\WindowsFormApp.pdb
+E:\Repos\PythonTempSolution\WindowsFormApp\obj\Debug\WindowsFormApp.MainForm.resources
+E:\Repos\PythonTempSolution\WindowsFormApp\obj\Debug\WindowsFormApp.Properties.Resources.resources
+E:\Repos\PythonTempSolution\WindowsFormApp\obj\Debug\WindowsFormApp.csproj.GenerateResource.Cache
+E:\Repos\PythonTempSolution\WindowsFormApp\obj\Debug\WindowsFormApp.exe
+E:\Repos\PythonTempSolution\WindowsFormApp\obj\Debug\WindowsFormApp.pdb
+E:\Repos\PythonTempSolution\IronPythonFormApp\WindowsFormApp.exe.config
+E:\Repos\PythonTempSolution\IronPythonFormApp\WindowsFormApp.exe
+E:\Repos\PythonTempSolution\IronPythonFormApp\WindowsFormApp.pdb

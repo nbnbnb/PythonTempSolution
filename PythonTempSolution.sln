@@ -7,6 +7,12 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python2App", "Python2App\Py
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Python3App", "Python3App\Python3App.pyproj", "{376FD11F-110B-49D8-9BB9-F91E52413943}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "IronPythonApp", "IronPythonApp\IronPythonApp.pyproj", "{CABFE09B-D8C4-4269-A3B0-4BD08B5D7802}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "IronPythonFormApp", "IronPythonFormApp\IronPythonFormApp.pyproj", "{A9823EDA-4AB3-422C-A14E-D9BFCA85ACC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormApp", "WindowsFormApp\WindowsFormApp.csproj", "{B7B51784-9437-4E0B-A6CA-1BF22C80E850}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +23,14 @@ Global
 		{B02E156B-2EAC-4BA0-A6EE-5B4853980BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{376FD11F-110B-49D8-9BB9-F91E52413943}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{376FD11F-110B-49D8-9BB9-F91E52413943}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CABFE09B-D8C4-4269-A3B0-4BD08B5D7802}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CABFE09B-D8C4-4269-A3B0-4BD08B5D7802}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A9823EDA-4AB3-422C-A14E-D9BFCA85ACC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A9823EDA-4AB3-422C-A14E-D9BFCA85ACC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B51784-9437-4E0B-A6CA-1BF22C80E850}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B51784-9437-4E0B-A6CA-1BF22C80E850}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B51784-9437-4E0B-A6CA-1BF22C80E850}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B51784-9437-4E0B-A6CA-1BF22C80E850}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
