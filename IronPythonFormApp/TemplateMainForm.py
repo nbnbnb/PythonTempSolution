@@ -5,7 +5,7 @@ clr.AddReference('System.Windows.Forms')
 # 把 WindowsFormApp 的生成输出目录设置到当前文件夹中
 # 一定要将源代码格式设置为 UTF8+BOM，否则无法输入中文
 
-# 需要将控件的 Motify 设置为 Pubulic
+# 需要将控件的 Modify 设置为 Pubulic
 # 这样才能在 Python 中进行访问
 clr.AddReferenceToFile('WindowsFormApp.exe') 
 #clr.AddReference('WindowsFormApp')
