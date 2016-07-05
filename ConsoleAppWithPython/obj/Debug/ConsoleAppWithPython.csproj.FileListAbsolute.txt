@@ -20,3 +20,17 @@ E:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\Microsoft.Scripting.M
 E:\Repos\PythonTempSolution\ConsoleAppWithPython\obj\Debug\ConsoleAppWithPython.csprojResolveAssemblyReference.cache
 E:\Repos\PythonTempSolution\ConsoleAppWithPython\obj\Debug\ConsoleAppWithPython.exe
 E:\Repos\PythonTempSolution\ConsoleAppWithPython\obj\Debug\ConsoleAppWithPython.pdb
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\ConsoleAppWithPython.exe.config
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\obj\Debug\ConsoleAppWithPython.exe
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\obj\Debug\ConsoleAppWithPython.pdb
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\ConsoleAppWithPython.exe
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\ConsoleAppWithPython.pdb
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\IronPython.xml
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\IronPython.Modules.xml
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\IronPython.SQLite.xml
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\IronPython.Wpf.xml
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\Microsoft.Dynamic.xml
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\Microsoft.Scripting.xml
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\Microsoft.Scripting.AspNet.xml
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\bin\Debug\Microsoft.Scripting.Metadata.xml
+D:\Repos\PythonTempSolution\ConsoleAppWithPython\obj\Debug\ConsoleAppWithPython.csprojResolveAssemblyReference.cache
