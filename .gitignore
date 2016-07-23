@@ -55,3 +55,6 @@ target/
 
 # Beyond Compare 临时文件
 *.orig
+
+# VS File
+*.suo
