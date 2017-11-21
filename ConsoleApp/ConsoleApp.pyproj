@@ -28,6 +28,12 @@
     <Compile Include="RabbitMQ\chapter-2\hello_world_producer.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="RabbitMQ\rpc_client.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="RabbitMQ\rpc_server.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="RabbitMQ\chapter-2\" />
