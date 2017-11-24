@@ -22,22 +22,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="ConsoleApp.py" />
-    <Compile Include="RabbitMQ\chapter-2\hello_world_consumer.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="RabbitMQ\chapter-2\hello_world_producer.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="RabbitMQ\rpc_client.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="RabbitMQ\rpc_server.py">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="RabbitMQ\hello\consumer.py" />
+    <Compile Include="RabbitMQ\hello\producer.py" />
+    <Compile Include="RabbitMQ\rpc\rpc_client.py" />
+    <Compile Include="RabbitMQ\rpc\rpc_server.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="RabbitMQ\chapter-2\" />
     <Folder Include="RabbitMQ\" />
+    <Folder Include="RabbitMQ\hello\" />
+    <Folder Include="RabbitMQ\rpc\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
