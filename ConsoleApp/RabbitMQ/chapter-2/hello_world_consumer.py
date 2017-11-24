@@ -4,7 +4,7 @@ import pika
 credentials = pika.PlainCredentials("rabbit","rabbit")
 
 # 没有指定虚拟主机，使用默认的 "/"
-conn_params = pika.ConnectionParameters("192.168.199.198",credentials=credentials)
+conn_params = pika.ConnectionParameters("192.168.199.198",credentials=credentials,port=9002)
 
 conn_broker = pika.BlockingConnection(conn_params)
 
