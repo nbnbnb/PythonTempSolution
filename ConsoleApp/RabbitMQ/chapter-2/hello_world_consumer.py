@@ -28,11 +28,13 @@ def msg_consumer(channel,method,header,body):
         channel.basic_cancel(consumer_tag="hello-consumer")
         channel.stop_consuming()
     else:
-        print(body)
+        print("接收消息：" + body.decode())
     return
 
 # 订阅消费者
 channel.basic_consume(msg_consumer,queue="hello-queue",consumer_tag="hello-consumer")
+
+print("启动消费者")
 
 # 开始消费
 channel.start_consuming()
