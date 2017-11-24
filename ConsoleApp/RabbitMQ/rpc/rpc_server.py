@@ -3,7 +3,7 @@ import json
 
 # 建立到服务器的连接
 creds_broker = pika.PlainCredentials("rabbit","rabbit")
-conn_params = pika.ConnectionParameters("192.168.199.198",virtual_host="/",credentials=creds_broker)
+conn_params = pika.ConnectionParameters("192.168.199.198",virtual_host="/",credentials=creds_broker,port=9002)
 
 conn_broker = pika.BlockingConnection(conn_params)
 channel = conn_broker.channel()
