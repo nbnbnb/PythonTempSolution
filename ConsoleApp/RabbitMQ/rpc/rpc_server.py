@@ -18,9 +18,8 @@ channel.queue_bind(queue="ping",exchange="rpc",routing_key="ping")
 def api_ping(channel,method,header,body):
     channel.basic_ack(delivery_tag=method.delivery_tag)
     msg_dict = json.loads(body)
-    print("Received API call...replying...")
-    channel.basic_publish(body="Pong!" + str(msg_dict["time"]),exchange="",routing_key=header.reply_to)
-
+    print("服务端收到请求"+str(msg_dict["id"]))
+    channel.basic_publish(body="Pong!" + str(msg_dict["id"]),exchange="",routing_key=header.reply_to)
 
 channel.basic_consume(api_ping,queue="ping",consumer_tag="ping")
 

@@ -4,12 +4,14 @@ import time
 
 # 建立到服务器的连接
 creds_broker = pika.PlainCredentials("rabbit","rabbit")
+
+# 9002 master-rabbit（disc）
+# 9012 slaver-rabbit-1（ram）
+# 9022 slaver-rabbit-2（ram）
 conn_params = pika.ConnectionParameters("192.168.199.198",virtual_host="/",credentials=creds_broker,port=9002)
 
 conn_broker = pika.BlockingConnection(conn_params)
 channel = conn_broker.channel()
-
-msg = json.dumps({"client_name":"RPC Client 1.0","time":time.time()})
 
 # 创建应答队列
 # exclusive=True 表示队列名称是唯一的
@@ -24,16 +26,18 @@ msg_props.reply_to = result.method.queue
 print("Send 'ping' RPC call. Waiting for reply...")
 
 # 先启动服务端，创建 rpc 交换机
-for x in range(10000):
-    print("Message: " + str(x))
+for x in range(100000):
+    print("Send Message: " + str(x))
+    msg = json.dumps({"client_name":"RPC Client 1.0","time":time.time(),"id":x})
     # 将消息发送到 rpc 交换器（服务器端先启动，进行创建）
     channel.basic_publish(body=msg,exchange="rpc",properties=msg_props,routing_key="ping")
 
-def reply_callbaack(channel,method,header,body):
-    print("RPC Reply --- " + body.decode())
-    channel.stop_consuming()
+def reply_callback(channel,method,header,body):
+    print("客户端收到回调 --- " + body.decode())
 
-channel.basic_consume(reply_callbaack,queue=result.method.queue,consumer_tag=result.method.queue)
+
+channel.basic_consume(reply_callback,queue=result.method.queue,consumer_tag=result.method.queue)
 
 channel.start_consuming()
 
+# channel.stop_consuming()
