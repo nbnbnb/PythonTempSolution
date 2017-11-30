@@ -8,7 +8,7 @@ creds_broker = pika.PlainCredentials("rabbit","rabbit")
 # 9002 master-rabbit（disc）
 # 9012 slaver-rabbit-1（ram）
 # 9022 slaver-rabbit-2（ram）
-conn_params = pika.ConnectionParameters("192.168.199.198",virtual_host="/",credentials=creds_broker,port=9002)
+conn_params = pika.ConnectionParameters("192.168.199.198",virtual_host="/",credentials=creds_broker,port=9333)
 
 conn_broker = pika.BlockingConnection(conn_params)
 channel = conn_broker.channel()
