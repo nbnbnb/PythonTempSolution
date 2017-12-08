@@ -26,8 +26,15 @@
     <Compile Include="RabbitMQ\hello\producer.py" />
     <Compile Include="RabbitMQ\rpc\rpc_client.py" />
     <Compile Include="RabbitMQ\rpc\rpc_server.py" />
+    <Compile Include="Redis\HelloRedis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Redis\Chap5.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Redis\" />
     <Folder Include="RabbitMQ\" />
     <Folder Include="RabbitMQ\hello\" />
     <Folder Include="RabbitMQ\rpc\" />
