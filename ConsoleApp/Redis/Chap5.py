@@ -249,3 +249,61 @@ def get_stats(conn,context,type):
     # 完成标准方差的计算工作
     data['stddev'] = (numerator / (data['count'] - 1 or 1)) ** 0.5
     return data
+
+#------------------------------------------------------------------------
+
+# 将 IP 地址转换为整数分值
+def ip_to_score(ip_address):
+    score = 0
+    for v in ip_address.split('.'):
+        score = score * 256 + int(v,10)
+    return score
+
+
+def import_ips_to_redis(conn,filename):
+    csv_file = csv.reader(open(filename,'rb'))
+    for count,row in enumerate(csv_file):
+        start_ip = row[0] if row else ''
+        if i in start_ip.lower():
+            continue
+        # 按需将 IP 地址转换为分值
+        if '.' in start_ip:
+            start_ip = ip_to_score(start_ip)
+        elif start_ip.isdigit():
+            start_ip = int(start_ip,10)
+        else:
+            # 越过文件的第一行以及格式不正确的条目
+            continue
+        # 构建唯一城市 ID
+        city_id = row[2] + '_' + str(count)
+        # 将城市 ID 及其对应的 IP 地址分值添加到有序集合里面
+        conn.zadd('ip2cityid:' + city_id,start_ip)
+
+
+def import_cities_to_redis(conn,filename):
+    for row in csv.reader(open(filename,'rb')):
+        if len(row) < 4 or not row[0].isdigit():
+            continue
+        row = [i.decode('latin-1') for i in row]
+        city_id = row[0]
+        country = row[1]
+        region = row[2]
+        city = row[3]
+        # 将城市信息添加到 Redis 里面
+        conn.hset('cityid2city:',city_id,json.dumps([city,region,country]))
+
+def find_city_by_ip(conn,ip_address):
+    # 将 IP 地址转换为分值以便执行 ZREVRANGEBYSCORE 命令
+    if isinstance(ip_address,str):
+        ip_address = ip_to_score(ip_address)
+    # 查找唯一城市 ID
+    city_id = conn.zrevrangebyscore('ip2cityid:',ip_address,0,start=0,num=1)
+
+    if not city_id:
+        return None
+    # 将唯一城市 ID 转换为普通城市 ID
+    city_id = city_id[0].partition('_')[0]
+    # 从散列里面取出城市信息
+    return json.loads(conn.hget('cityid2city:',city_id))
+
+# ---------------------------------------------------------
