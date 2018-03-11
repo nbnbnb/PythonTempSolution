@@ -1,0 +1,10 @@
+{
+    // 禁用 python linting
+    "python.linting.enabled": false,
+    // 从资源管理器中删除文件，移动到回收站，不再确认
+    "explorer.confirmDelete": false,
+      // 控制编辑器是否应在键入后自动设置行的格式
+    "editor.formatOnType": true,
+      // 保存时设置文件的格式。格式化程序必须可用，不能自动保存文件，并且不能关闭编辑器。
+    "editor.formatOnSave": true
+}
